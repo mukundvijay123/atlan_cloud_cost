@@ -127,7 +127,7 @@ GROUP BY product_code, resource_tag
 ORDER BY total_cost DESC
 LIMIT 10;
 ```
-**Summary**
+### Summary
 By applying these Athena queries, you can quickly identify the highest cost drivers within your AWS environment. The queries leverage standardized tagging (for IAM users, PaaS, containers, EC2, Fargate, storage, Elastic IPs, and Redshift) so that any resource can be easily filtered and aggregated. This approach provides a unified view, enabling effective cost optimization and governance.
 
-For further optimization, integrating these queries into dashboards (e.g., Grafana) and automating anomaly detection using ML models such as Isolation Forest or LSTM-based forecasting via AWS SageMaker can be done.
+For further optimization, integrating these queries into dashboards (Grafana) and automating anomaly detection using ML models such as Isolation Forest or LSTM-based forecasting via AWS SageMaker can be done.
